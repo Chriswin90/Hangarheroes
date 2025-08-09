@@ -2,14 +2,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hangar Heroes</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="game.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quest 1 - IMSAFE Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Hangar Heroes</h1>
-    <p>Every Flight is a Team Effort</p>
-    <a href="quest1.html" class="button">Start Quest 1</a>
+<h1>Quest 1: IMSAFE Check</h1>
+<p>Drag the items to the correct IMSAFE category.</p>
+<div class="game-container">
+    <div class="dropzone" data-category="Illness">Illness</div>
+    <div class="dropzone" data-category="Medication">Medication</div>
+    <div class="dropzone" data-category="Stress">Stress</div>
+    <div class="dropzone" data-category="Alcohol">Alcohol</div>
+    <div class="dropzone" data-category="Fatigue">Fatigue</div>
+    <div class="dropzone" data-category="Eating">Eating</div>
+</div>
+<div class="items">
+    <div class="item" draggable="true" data-category="Illness">🤒 Tissue Box</div>
+    <div class="item" draggable="true" data-category="Medication">💊 Medicine Bottle</div>
+    <div class="item" draggable="true" data-category="Stress">😫 Stress Icon</div>
+    <div class="item" draggable="true" data-category="Alcohol">🍺 Beer</div>
+    <div class="item" draggable="true" data-category="Fatigue">🛏️ Bed</div>
+    <div class="item" draggable="true" data-category="Eating">🍎 Apple</div>
+</div>
+<div id="result"></div>
+<script src="script.js"></script>
 </body>
 </html>
